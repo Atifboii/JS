@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1
+      style="
+        text-align: center;
+        font-size: xxx-large;
+        font-family: 'Trebuchet MS', sans-serif;
+        color: brown;
+      "
+      ;
+    >
+      Calculator
+    </h1>
+    <input
+      id="display"
+      type="text"
+      readonly
+      style="position: fixed; left: 21rem; top: 6rem"
+    />
+    <div style="position: fixed; left: 23rem; top: 8rem">
+      <table>
+        <tr>
+          <td>
+            <button style="font-size: xx-large" onclick="addtodisplay(`1`)">
+              1
+            </button>
+          </td>
+          <td>
+            <button style="font-size: xx-large" onclick="addtodisplay(`2`)">
+              2
+            </button>
+          </td>
+          <td>
+            <button style="font-size: xx-large" onclick="addtodisplay(`3`)">
+              3
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button style="font-size: xx-large" onclick="addtodisplay(`4`)">
+              4
+            </button>
+          </td>
+          <td>
+            <button style="font-size: xx-large" onclick="addtodisplay(`5`)">
+              5
+            </button>
+          </td>
+          <td>
+            <button style="font-size: xx-large" onclick="addtodisplay(`6`)">
+              6
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button style="font-size: xx-large" onclick="addtodisplay(`7`)">
+              7
+            </button>
+          </td>
+          <td>
+            <button style="font-size: xx-large" onclick="addtodisplay(`8`)">
+              8
+            </button>
+          </td>
+          <td>
+            <button style="font-size: xx-large" onclick="addtodisplay(`9`)">
+              9
+            </button>
+          </td>
+        </tr>
+      </table>
+      <div style="position: fixed; left: 22.5rem; top: 17rem">
+        <table>
+          <tr>
+            <th>
+              <button
+                style="font-size: xx-large"
+                class="operator"
+                onclick="addtodisplay(`1`)"
+              >
+                +
+              </button>
+            </th>
+            <th>
+              <button
+                style="font-size: xx-large"
+                class="operator"
+                onclick="addtodisplay(`-`)"
+              >
+                -
+              </button>
+            </th>
+            <th>
+              <button
+                style="font-size: xx-large"
+                class="operator"
+                onclick="addtodisplay(`/`)"
+              >
+                /
+              </button>
+            </th>
+            <th>
+              <button
+                style="font-size: xx-large"
+                class="operator"
+                onclick="addtodisplay(`*`)"
+              >
+                x
+              </button>
+            </th>
+          </tr>
+        </table>
+        <th>
+          <button style="font-size: xx-large" onclick="calculate()">=</button>
+        </th>
+        <th>
+          <button style="font-size: xx-large" onclick="clear()">C</button>
+        </th>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
