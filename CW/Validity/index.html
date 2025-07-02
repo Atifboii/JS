@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form id="form">
+        <fieldset>
+          <legend>Contact Form</legend>
+          <br /><br />
+          <div class="User">
+            <label for="User">Name:</label>
+            <input type="text" name="Username" id="user" />
+          </div>
+          <br />
+          <div class="password">
+            <label for="password">password:</label>
+            <input type="password" name="pass" id="pass" />
+          </div>
+          <br />
+          <input type="submit" />
+          <p id="alert"></p>
+        </fieldset>
+      </form>
+    </main>
+    <br />
+    <section>
+      <div class="num">
+        <label for="Number">Enter Number:</label>
+        <input type="number" id="input" min="1000" max="1500" required />
+        <button onclick="func()">OK</button>
+      </div>
+      <p id="result"></p>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
